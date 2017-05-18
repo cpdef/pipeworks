@@ -6,7 +6,7 @@
 
 local fs_helpers = pipeworks.fs_helpers
 
-tube_entry = "^pipeworks_tube_connection_wooden.png"
+tube_entry = "^pipeworks_tube_connection_chest.png"
 
 local base_chest_formspec = "size[8,9]" ..
 	default.gui_bg ..
@@ -36,12 +36,7 @@ end
 
 minetest.override_item("default:chest", {
 	tiles = {
-		"default_chest_top.png"..tube_entry,
-		"default_chest_top.png"..tube_entry,
-		"default_chest_side.png"..tube_entry,
-		"default_chest_side.png"..tube_entry,
-		"default_chest_side.png"..tube_entry,
-		"default_chest_front.png"
+		"default_chest_wood.png"..tube_entry,
 	},
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, tubedevice = 1, tubedevice_receiver = 1},
 	tube = {
@@ -103,12 +98,7 @@ end
 
 minetest.override_item("default:chest_locked", {
 	tiles = {
-		"default_chest_top.png"..tube_entry,
-		"default_chest_top.png"..tube_entry,
-		"default_chest_side.png"..tube_entry,
-		"default_chest_side.png"..tube_entry,
-		"default_chest_side.png"..tube_entry,
-		"default_chest_lock.png"
+		"default_chest_wood_locked.png"..tube_entry,
 	},
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, tubedevice = 1, tubedevice_receiver = 1},
 	tube = {
